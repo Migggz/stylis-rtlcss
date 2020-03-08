@@ -2,10 +2,35 @@
   "name": "stylis-rtlcss",
   "version": "1.0.0",
   "description": "tiny styled-components plugin converts LTR to RTL, based on RTLCSS",
-  "main": "index.js",
+  "main": "dist/stylis-rtlcss.js",
   "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Maged Mohamed",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Migggz/stylis-rtlcss/"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "stylis": "3.x"
+  },
+  "dependencies": {
+    "rtlcss": "^2.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "husky": "^4.2.3",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "stylis": "^3.5.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
 }
