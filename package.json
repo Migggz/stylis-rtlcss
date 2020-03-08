@@ -1,0 +1,11 @@
+{
+  "name": "stylis-rtlcss",
+  "version": "1.0.0",
+  "description": "tiny styled-components plugin converts LTR to RTL, based on RTLCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maged Mohamed",
+  "license": "MIT"
+}
