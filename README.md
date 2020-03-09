@@ -29,7 +29,7 @@ npm i stylis-rtlcss
 
 ```jsx
 import styled, { StyleSheetManager } from "styled-components";
-import rtlPlugin from "stylis-plugin-rtl";
+import rtlcss from "stylis-rtlcss";
 
 const StyledDiv = styled.div`
   margin-left: 10px;
@@ -37,7 +37,7 @@ const StyledDiv = styled.div`
 
 class App extends Component {
   return (
-    <StyleSheetManager stylisPlugins={[rtlPlugin]}>
+    <StyleSheetManager stylisPlugins={[rtlcss]}>
       <StyledDiv>Margin will be on RIGHT!</StyledDiv>
     </StyleSheetManager>
   )
@@ -72,7 +72,7 @@ Control directives are placed between declarations or statements (rules and at-r
 
 ```jsx
 import styled, { StyleSheetManager } from "styled-components";
-import rtlPlugin from "stylis-plugin-rtl";
+import rtlcss from "stylis-rtlcss";
 
 const StyledDiv = styled.div`
   /*rtl:ignore*/
@@ -81,7 +81,7 @@ const StyledDiv = styled.div`
 
 class App extends Component {
   return (
-    <StyleSheetManager stylisPlugins={[rtlPlugin]}>
+    <StyleSheetManager stylisPlugins={[rtlcss]}>
       <StyledDiv>Margin stills on LEFT!</StyledDiv>
     </StyleSheetManager>
   )
@@ -101,7 +101,7 @@ Value directives are placed any where inside the declaration value. They target 
 
 ```jsx
 import styled, { StyleSheetManager } from "styled-components";
-import rtlPlugin from "stylis-plugin-rtl";
+import rtlcss from "stylis-rtlcss";
 
 const StyledDiv = styled.div`
   margin-left: 10px /*rtl:ignore*/;
@@ -109,7 +109,7 @@ const StyledDiv = styled.div`
 
 class App extends Component {
   return (
-    <StyleSheetManager stylisPlugins={[rtlPlugin]}>
+    <StyleSheetManager stylisPlugins={[rtlcss]}>
       <StyledDiv>Margin stills on LEFT!</StyledDiv>
     </StyleSheetManager>
   )
