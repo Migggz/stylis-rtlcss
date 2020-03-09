@@ -1,5 +1,7 @@
 <div align="center">
   <img src="https://magedmohamed.me/stylis-rtlcss.png" style="display: block">
+</div>
+<div align="center">
   <strong>Stylis RTL plugin based on <a href="https://rtlcss.com/" target="_blank">RTLCSS</a></strong>
   <strong>and much more, without tears <b style="font-size: 1.6em"></b>
   </strong>
