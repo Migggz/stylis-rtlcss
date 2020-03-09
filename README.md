@@ -49,7 +49,7 @@ class App extends Component {
 ### Supports Directives
 
 - you need to **disable** minification in babel plugin [Reference](https://styled-components.com/docs/tooling#minification), that is because of minification removes all comments from your CSS before it passes to **`<StyleSheetManager>`**. So,
-  in `.babelrc` file, set `minify` to false
+  in `.babelrc` file, set `minify` to `false`
 
 ```json
 {
@@ -129,6 +129,4 @@ class App extends Component {
 
 ## License
 
-Licensed under the MIT License, Copyright © 2016-present Glen Maddern and Maximilian Stoiber.
-
-See [LICENSE](./LICENSE) for more information.
+Licensed under the MIT License
