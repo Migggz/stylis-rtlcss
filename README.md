@@ -25,8 +25,6 @@ yarn add stylis-rtlcss
 npm i stylis-rtlcss
 ```
 
----
-
 ## Usage with Styled-Components v5+
 
 ```jsx
@@ -45,8 +43,6 @@ class App extends Component {
   )
 }
 ```
-
----
 
 ## Options 🔥
 
