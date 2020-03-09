@@ -8,7 +8,7 @@
   <div style="font-size: 2em">😎</div>
   <br/>
   <a href="https://www.npmjs.com/package/stylis-rtlcss" title="npm version"><img src="https://badgen.net/npm/license/stylis-rtlcss" alt="license"></a>
-  <a href="https://bundlephobia.com/result?p=stylis-rtlcss@1.0.2" title="styled-components latest minified+gzip size"><img src="https://badgen.net/bundlephobia/minzip/stylis-rtlcss@1.0.2" alt="gzip size"></a>
+  <a href="https://bundlephobia.com/result?p=stylis-rtlcss@1.0.4" title="styled-components latest minified+gzip size"><img src="https://badgen.net/bundlephobia/minzip/stylis-rtlcss@1.0.4" alt="gzip size"></a>
 </div>
 
 ## Install
