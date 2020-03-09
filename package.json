@@ -1,6 +1,6 @@
 {
   "name": "stylis-rtlcss",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "tiny styled-components plugin converts LTR to RTL, based on RTLCSS",
   "main": "dist/stylis-rtlcss.js",
   "scripts": {
