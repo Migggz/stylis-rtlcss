@@ -8,7 +8,25 @@
     "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Maged Mohamed",
+  "author": {
+    "name": "Maged Mohamed",
+    "email": "MagedMohammed16@GMail.Com",
+    "url": "https://github.com/Migggz/"
+  },
+  "keywords": [
+    "rtl",
+    "bidi",
+    "stylis",
+    "emotion",
+    "emotion-js",
+    "css",
+    "preprocessor",
+    "styled-components"
+  ],
+  "homepage": "https://github.com/Migggz/stylis-rtlcss#readme",
+  "bugs": {
+    "url": "https://github.com/Migggz/stylis-rtlcss/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Migggz/stylis-rtlcss/"
