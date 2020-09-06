@@ -1,6 +1,6 @@
 {
   "name": "stylis-rtlcss",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "tiny styled-components plugin converts LTR to RTL, based on RTLCSS",
   "main": "dist/stylis-rtlcss.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "email": "MagedMohammed16@GMail.Com",
     "url": "https://github.com/Migggz/"
   },
-  "types": "types/stylis-rtlcss.d.ts",
+  "types": "dist/stylis-rtlcss.d.ts",
   "keywords": [
     "rtl",
     "bidi",
