@@ -1,6 +1,6 @@
-// @flow
-import rtlcss from "rtlcss";
+const rtlcss = require("rtlcss");
 
+type $Values<O extends object> = O[keyof O];
 // https://github.com/thysultan/stylis.js#plugins
 const STYLIS_CONTEXTS = {
   POST_PROCESS: -2,
@@ -8,14 +8,16 @@ const STYLIS_CONTEXTS = {
   NEWLINE: 0,
   PROPERTY: 1,
   SELECTOR_BLOCK: 2,
-  AT_RULE: 3
+  AT_RULE: 3,
 };
-
 export type StylisContextType = $Values<typeof STYLIS_CONTEXTS>;
 
 export const STYLIS_PROPERTY_CONTEXT = STYLIS_CONTEXTS.PREPARATION;
 
-function stylisRTLCSS(context: StylisContextType, content: string): ?string {
+function stylisRTLCSS(
+  context: StylisContextType,
+  content: string
+): string | null | undefined {
   if (context === STYLIS_PROPERTY_CONTEXT) {
     return rtlcss.process(content);
   }

@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://magedmohamed.me/stylis-rtlcss.png" style="display: block">
+  <img src="https://migggz.me/stylis-rtlcss.png" style="display: block">
 </div>
 <div align="center">
   <strong>Stylis RTL plugin based on <a href="https://rtlcss.com/" target="_blank">RTLCSS</a></strong>
