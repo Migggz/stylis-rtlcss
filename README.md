@@ -36,11 +36,37 @@ const StyledDiv = styled.div`
 `;
 
 class App extends Component {
-  return (
-    <StyleSheetManager stylisPlugins={[rtlcss]}>
-      <StyledDiv>Margin will be on RIGHT!</StyledDiv>
-    </StyleSheetManager>
-  )
+  render() {
+    return (
+      <StyleSheetManager stylisPlugins={[rtlcss]}>
+        <StyledDiv>Margin will be on RIGHT!</StyledDiv>
+      </StyleSheetManager>
+    );
+  }
+}
+```
+
+#### :globe_with_meridians: For conditionally usage based on language
+
+to avoid typing issues in `StyleSheetManager` while using **Typescript**, you should conditionally render props
+
+```jsx
+import styled, { StyleSheetManager } from "styled-components";
+import rtlcss from "stylis-rtlcss";
+
+const StyledDiv = styled.div`
+  margin-left: 10px;
+`;
+
+class App extends Component {
+  render() {
+    const { language } = this.props;
+    return (
+      <StyleSheetManager {...(language === 'ar' ? { stylisPlugins: [rtlcss] } : {})}
+        <StyledDiv>Margin will be on RIGHT!</StyledDiv>
+      </StyleSheetManager>
+    )
+  }
 }
 ```
 
@@ -80,11 +106,13 @@ const StyledDiv = styled.div`
 `;
 
 class App extends Component {
-  return (
-    <StyleSheetManager stylisPlugins={[rtlcss]}>
-      <StyledDiv>Margin stills on LEFT!</StyledDiv>
-    </StyleSheetManager>
-  )
+  render() {
+    return (
+      <StyleSheetManager stylisPlugins={[rtlcss]}>
+        <StyledDiv>Margin stills on LEFT!</StyledDiv>
+      </StyleSheetManager>
+    );
+  }
 }
 ```
 
@@ -108,11 +136,13 @@ const StyledDiv = styled.div`
 `;
 
 class App extends Component {
-  return (
-    <StyleSheetManager stylisPlugins={[rtlcss]}>
-      <StyledDiv>Margin stills on LEFT!</StyledDiv>
-    </StyleSheetManager>
-  )
+  render() {
+    return (
+      <StyleSheetManager stylisPlugins={[rtlcss]}>
+        <StyledDiv>Margin stills on LEFT!</StyledDiv>
+      </StyleSheetManager>
+    );
+  }
 }
 ```
 

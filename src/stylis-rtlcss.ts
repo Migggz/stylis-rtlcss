@@ -14,10 +14,7 @@ export type StylisContextType = $Values<typeof STYLIS_CONTEXTS>;
 
 export const STYLIS_PROPERTY_CONTEXT = STYLIS_CONTEXTS.PREPARATION;
 
-function stylisRTLCSS(
-  context: StylisContextType,
-  content: string
-): string | null | undefined {
+function stylisRTLCSS(context: any, content: any): any {
   if (context === STYLIS_PROPERTY_CONTEXT) {
     return rtlcss.process(content);
   }
